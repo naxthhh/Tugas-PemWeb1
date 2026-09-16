@@ -220,3 +220,117 @@ nav ul li a.active {
     font-size: 1.7rem;
     }
 }
+
+/*tentang.html*/
+
+.tentang {
+    max-width: 900px;
+    margin: 80px auto 60px;
+    padding: 0 24px;
+}
+
+.tentang h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: #111;
+    text-align: center;
+}
+
+.tentang p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #555;
+    max-width: 700px;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-wrap: pretty;
+}
+
+.tentang .divider {
+    margin: 36px 0;
+}
+
+.tentang h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 40px 0 16px;
+}
+
+.tentang p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.prinsip {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prinsip li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.prinsip .angka {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 0.85rem;
+    color: #aaa;
+    padding-top: 3px;
+}
+
+.prinsip strong {
+    display: block;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.prinsip p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+.aksi {
+    list-style: none;
+    padding-left: 0;
+}
+
+.aksi li {
+    padding: 14px 0 14px 24px;
+    border-top: 1px solid #e0e0de;
+    font-size: 0.95rem;
+    color: #555;
+    position: relative;
+}
+
+.aksi li:last-child {
+    border-bottom: 1px solid #e0e0de;
+}
+
+.aksi li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    .tentang {
+        margin: 48px auto 60px;
+    }
+    .tentang h1 {
+        font-size: 1.7rem;
+    }
+}
