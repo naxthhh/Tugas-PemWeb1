@@ -1,336 +1,183 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f9f9f7;
-    color: #222;
-    line-height: 1.7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding-bottom: 2rem;
 }
 
-/*navbar*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 48px;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav .logo {
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    color: #111;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 1.5rem;
 }
 
 nav ul li a {
+    color: #cccccc;
     text-decoration: none;
-    color: #444;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.9rem;
-    transition: color 0.2s;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #111;
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    color: #111;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: bold;
 }
 
-/*index.html*/
-
-.utama {
-    max-width: 900px;
-    margin: 80px auto 60px;
-    padding: 0 24px;
-}
-
-.utama h1 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-    line-height: 1.25;
-    font-weight: normal;
-    color: #111;
-    text-align: center;
-}
-
-.utama p {
-    font-size: 1.05rem;
-    max-width: 580px;
-    color: #555;
-    text-align: justify;
-    margin: 0 auto;
-}
-
-.hero p + p {
-    margin-top: 16px;
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
 }
 
 .divider {
-    width: 100%;
-    height: 2px;
-    background-color: #bbb;
-    margin: 36px 0;
+    height: 4px;
+    width: 60px;
+    background-color: #e63946;
+    margin: 1rem 0 1.5rem 0;
 }
 
-.gambar {
-    max-width: 700px;
-    margin: 0 auto 80px;
-    padding: 0 24px;
-}
-
-.gambar h2 {
-    font-size: 1rem;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-.foto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+.gambar .foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .foto-item {
+    flex: 1 1 300px; 
+    border-radius: 8px;
     overflow: hidden;
-    border-radius: 4px;
-    background-color: #e5e5e3;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
 }
 
 .foto-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 250px;
+    object-fit: cover;
 }
 
 .caption {
-    padding: 10px 12px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.8rem;
-    color: #777;
-}
-
-/*contact.html*/
-
-.kontak-saya {
-    max-width: 560px;
-    margin: 80px auto 100px;
-    padding: 0 24px;
-}
-
-.kontak-saya h1 {
-    font-size: 2.2rem;
-    font-weight: normal;
-    margin-bottom: 12px;
-    color: #111;
-}
-
-.kontak-saya .subtitle {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.95rem;
-    color: #777;
-    margin-bottom: 48px;
-}
-
-.list-kontak {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.list-kontak li {
-    border-top: 1px solid #e0e0de;
-    padding: 20px 0;
-}
-
-.list-kontak li:last-child {
-    border-bottom: 1px solid #e0e0de;
-}
-
-.label-kontak {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.75rem;
-    color: #aaa;
-    margin-bottom: 4px;
-}
-
-.value {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    color: #222;
-}
-
-.value a {
-    text-decoration: none;
-    color: #222;
-    transition: color 0.2s;
-}
-
-.value a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-/*2 halaman*/
-
-@media (max-width: 600px) {
-    nav {
-        padding: 16px 20px;
-    }
-
-    nav ul {
-    gap: 20px;
-    }
-
-    .utama {
-    margin: 48px auto 40px;
-    }
-
-    .utama h1 {
-    font-size: 1.7rem;
-    }
-
-    .foto {
-    grid-template-columns: 1fr;
-    }
-
-    .kontak-saya {
-    margin: 48px auto 60px;
-    }
-
-    .kontak-saya h1 {
-    font-size: 1.7rem;
-    }
-}
-
-/*tentang.html*/
-
-.tentang {
-    max-width: 900px;
-    margin: 80px auto 60px;
-    padding: 0 24px;
-}
-
-.tentang h1 {
-    font-size: 2.4rem;
-    font-weight: normal;
-    line-height: 1.25;
-    margin-bottom: 20px;
-    color: #111;
-    text-align: center;
-}
-
-.tentang p {
-    font-size: 1.05rem;
-    line-height: 1.75;
-    color: #555;
-    max-width: 700px;
-    text-align: justify;
-    margin-bottom: 20px;
-    text-wrap: pretty;
-}
-
-.tentang .divider {
-    margin: 36px 0;
-}
-
-.tentang h2 {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.95rem;
+    padding: 1rem;
     font-weight: 600;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin: 40px 0 16px;
-}
-
-.tentang p {
-    font-size: 1.05rem;
-    color: #555;
-    margin-bottom: 16px;
 }
 
 .prinsip {
     list-style: none;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .prinsip li {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    gap: 1rem;
 }
 
 .prinsip .angka {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 0.85rem;
-    color: #aaa;
-    padding-top: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e63946;
 }
 
-.prinsip strong {
-    display: block;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    color: #111;
-    margin-bottom: 4px;
-}
-
-.prinsip p {
-    font-size: 0.95rem;
-    color: #666;
-    margin: 0;
-}
-
-.aksi {
+.list-kontak {
     list-style: none;
-    padding-left: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.aksi li {
-    padding: 14px 0 14px 24px;
-    border-top: 1px solid #e0e0de;
-    font-size: 0.95rem;
-    color: #555;
-    position: relative;
+.list-kontak li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
-.aksi li:last-child {
-    border-bottom: 1px solid #e0e0de;
+.label-kontak {
+    font-weight: 600;
 }
 
-.aksi li::before {
-    content: "—";
-    position: absolute;
-    left: 0;
-    color: #bbb;
+.list-kontak a {
+    color: #1d3557;
+    text-decoration: none;
 }
 
-@media (max-width: 600px) {
-    .tentang {
-        margin: 48px auto 60px;
+.list-kontak a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
     }
-    .tentang h1 {
-        font-size: 1.7rem;
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gambar .foto {
+        flex-direction: column;
+    }
+
+    .foto-item {
+        flex: 1 1 100%;
+    }
+
+    .list-kontak li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
     }
 }
