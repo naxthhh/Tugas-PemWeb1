@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a class="logo" href="index.html">NO MORE MBG</a>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang.html" class="active">Tentang</a></li>
-            <li><a href="contact.html">Kontak</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="bi bi-megaphone-fill"></i> NO MORE MBG
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-bold" href="tentang.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white-50" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section class="tentang">
@@ -27,35 +44,75 @@
             Embege bukan hanya sekadar masalah estetika, tetapi juga berdampak pada kesehatan, lingkungan, dan kualitas hidup kita.
             Kami melihat bahwa program embege yang ada saat ini seringkali tidak transparan, tidak tepat sasaran, dan kurang berkelanjutan.
         </p>
+        
+<section class="py-5 bg-light">
+    <div class="container">
+        <img src="mbg.jpeg" 
+            class="img-fluid rounded shadow-sm mx-auto d-block"
+            style="max-width: 600px; width: 100%; height: auto;"
+            alt="embege">
+    </div>
+</section>
 
-        <h2>Wowok berbenah</h2>
-        <ol class="prinsip">
-            <li>
-                <span class="angka">01</span>
-                <div>
-                    <p>Anggaran negara digunakan dengan jelas</p>
+        <h2 class="mt-5">Wowok berbenah</h2>
+        <div class="row g-4 my-4">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 border-start border-danger border-4">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-danger me-2">01</span>
+                    <h5 class="fw-bold mb-0">Transparansi</h5>
                 </div>
-            </li>
-            <li>
-                <span class="angka">02</span>
-                <div>
-                    <p>Programnya harus sesuai dengan sasaran</p>
+                <p class="text-muted small mb-0">
+                    Anggaran negara digunakan dengan jelas dan sesuai dengan target anggaran
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 border-start border-danger border-4">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-danger me-2">02</span>
+                    <h5 class="fw-bold mb-0">Tepat Sasaran</h5>
                 </div>
-            </li>
-            <li>
-                <span class="angka">03</span>
-                <div>
-                    <p>Pelaksanaannya harus transparan dan bisa diawasi</p>
+                <p class="text-muted small mb-0">
+                    Program embege ini harus sesuai dengan sasaran yang ditujukan
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 border-start border-danger border-4">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-danger me-2">03</span>
+                    <h5 class="fw-bold mb-0">Keberlanjutan</h5>
                 </div>
-            </li>
-            <li>
-                <span class="angka">04</span>
-                <div>
-                    <p>Pelaksanaan embege perlu dievaluasi secara berkala</p>
+                <p class="text-muted small mb-0">
+                    Mempunyai solusi jangka panjang lebih penting dari pada pencitraan jangka pendek
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 border-start border-danger border-4">
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="badge bg-danger me-2">04</span>
+                    <h5 class="fw-bold mb-0">Evaluasi Berkala</h5>
                 </div>
-            </li>
-        </ol>
+                <p class="text-muted small mb-0">
+                    Pelaksanaan embege perlu dievaluasi secara berkala untuk memastikan efektivitas embege untuk masyarakat
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
     </section>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
